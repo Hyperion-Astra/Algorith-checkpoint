@@ -1,0 +1,35 @@
+ALGORITHM algorithm_name
+VAR
+    length_of_sentence = 0
+    number_of_words = 0
+    number_of_vowels = 0
+    vowels = "aeiouAEIOU"
+    user_sentence = 0
+BEGIN
+// Calculate length of the sentence, number of words, and number of vowels
+    for char in sentence:
+        length_of_sentence += 1
+
+        if char == ' ':
+            number_of_words += 1
+
+        if char in vowels:
+            number_of_vowels += 1
+
+    // Increment word count by 1 since the last word doesnt have a space after it
+    number_of_words += 1
+
+    // Display results
+    Read("Length of the sentence:", length_of_sentence)
+    Read("Number of words in the sentence:", number_of_words)
+    Read("Number of vowels in the sentence:", number_of_vowels)
+
+
+    //Input a sentence from the user
+    Write("Enter a sentence (ending with a period): ")
+    Read(user_sentence)
+
+    //Call the function to calculate and display sentence properties
+    Write(user_sentence)
+END
+    
