@@ -4,7 +4,7 @@ VAR
     numberOfWords = 0
     numberOfVowels = 0
     vowels = "aeiouAEIOU"
-    userSentence = 0
+    userSentence = ''
 BEGIN
 // Calculate length of the sentence, number of words, and number of vowels
     for char in sentence:
